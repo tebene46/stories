@@ -1,0 +1,14 @@
+
+…или создайте новый репозиторий в командной строке
+echo "# stories" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/tebene46/stories.git
+ git push - ты главный
+
+…или отправить существующий репозиторий из командной строки
+git remote add origin https://github.com/tebene46/stories.git
+ git branch -M main 
+git push -u origin main

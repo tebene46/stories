@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Читатель рассказов</title>
+    <link rel="stylesheet" type="text/css" href="styleIndex.css" charset="utf-8">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="subMenu">
+                <ul>
+                    <li><a href="index.html">All</a></li>
+                    <li><a href="horror.html">Ужасы</a></li>
+                    <li><a href="comedy.html">Комедия</a></li>
+                    <li><a href="scifi.html">Научная фантастика</a></li>
+                    <li><a href="mystery.html">Тайна</a></li>
+                    <li><a href="romance.html">Романтика</a></li>
+                    <li><a href="adventure.html">Приключения</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="info.htmal">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="dopStories.html">Разное</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="story">
+            <h2>Загадочный особняк</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+
+        <div class="story">
+            <h2>Смешная шутка</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+
+        <div class="story">
+            <h2>Удивительное приключение</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("subMenu");
+            menu.style.display = menu.style.display === "none" || menu.style.display === "" ? "flex" : "none";
+        }
+
+        // Скрыть гамбургер при загрузке страницы
+        window.addEventListener("load", function () {
+            var menu = document.getElementById("subMenu");
+            menu.style.display = "none";
+        });
+
+    </script>
+</body>
+</html>
